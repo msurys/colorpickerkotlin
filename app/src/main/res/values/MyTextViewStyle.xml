@@ -1,0 +1,12 @@
+<resources>
+    <style name="MyTextViewStyle">
+        <item name="android:layout_width">match_parent</item> <!-- Changed to wrap_content -->
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">@drawable/textview_border</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+    </style>
+</resources>

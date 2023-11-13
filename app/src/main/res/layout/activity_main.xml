@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/cardview_dark_background">
+
+
+    <View
+        android:id="@+id/colorSquare"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rounded_corners" />
+
+    <SeekBar
+        android:id="@+id/redSeekBar"
+        style="@style/MySeekBarStyle"
+        android:layout_below="@id/colorSquare"
+        android:colorControlActivated="@android:color/holo_red_light"
+        android:colorControlHighlight="@android:color/holo_red_light"
+        android:colorControlNormal="@android:color/holo_red_dark"
+        android:progressBackgroundTint="@android:color/holo_red_dark"
+        android:progressTint="@android:color/holo_red_light"
+        android:thumbTint="@android:color/holo_red_light" />
+
+    <SeekBar
+        style="@style/MySeekBarStyle"
+        android:id="@+id/greenSeekBar"
+        android:colorControlActivated="@android:color/holo_green_light"
+        android:colorControlHighlight="@android:color/holo_green_light"
+        android:colorControlNormal="@android:color/holo_green_dark"
+        android:progressBackgroundTint="@android:color/holo_green_dark"
+        android:progressTint="@android:color/holo_green_light"
+        android:thumbTint="@android:color/holo_green_light" />
+        />
+
+    <SeekBar
+        style="@style/MySeekBarStyle"
+        android:id="@+id/blueSeekBar"
+        android:colorControlActivated="@android:color/holo_blue_light"
+        android:colorControlHighlight="@android:color/holo_blue_light"
+        android:colorControlNormal="@android:color/holo_blue_dark"
+        android:progressBackgroundTint="@android:color/holo_blue_dark"
+        android:progressTint="@android:color/holo_blue_light"
+        android:thumbTint="@android:color/holo_blue_light"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/RGB"
+            android:text="RGB: 0, 0, 0"
+            style="@style/MyTextViewStyle"/>
+
+        <TextView
+            android:id="@+id/HEX"
+            android:text="HEX: #000000"
+            style="@style/MyTextViewStyle" />
+
+        <TextView
+            android:id="@+id/CMYK"
+            android:text="CMYK: 0, 0, 0, 100"
+            style="@style/MyTextViewStyle"/>
+
+        <TextView
+            android:id="@+id/HSV"
+            android:text="HSV: 0.00, 0.00, 0.00"
+            style="@style/MyTextViewStyle"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/colorMixer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color Mixer"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
