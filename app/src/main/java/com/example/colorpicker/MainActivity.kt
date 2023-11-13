@@ -74,16 +74,13 @@ class MainActivity : AppCompatActivity() {
         val rgbText = "RGB: $red, $green, $blue"
         findViewById<TextView>(R.id.RGB).text = rgbText
 
-        // Updating HEX TextView
         val hexText = "HEX: #${Integer.toHexString(color).substring(2).uppercase()}"
         findViewById<TextView>(R.id.HEX).text = hexText
 
-        // Updating CMYK TextView
         val cmyk = rgbToCmyk(red, green, blue)
         val cmykText = "CMYK: ${cmyk[0]}, ${cmyk[1]}, ${cmyk[2]}, ${cmyk[3]}"
         findViewById<TextView>(R.id.CMYK).text = cmykText
 
-        // Updating HSV TextView
         val hsv = FloatArray(3)
         Color.RGBToHSV(red, green, blue, hsv)
         val hsvText = "HSV: ${"%.2f".format(hsv[0])}, ${"%.2f".format(hsv[1])}, ${"%.2f".format(hsv[2])}"
