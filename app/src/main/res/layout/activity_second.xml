@@ -1,32 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:background="@color/cardview_dark_background">
-
-
+    android:background="@color/cardview_dark_background"
+    android:padding="16dp">
     <View
         android:id="@+id/colorSquare"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/rounded_corners" />
-        <Button
-            android:id="@+id/nextButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
 
-        />
-        <Button
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/wrapperred"
+        android:background="@drawable/wrapperred"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp">
 
-            android:id="@+id/previousButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-        />
+        <TextView
+            android:id="@+id/textView"
+            style="@style/textlbl"
+            android:text="Red - 0%" />
+
+        <Button
+            android:id="@+id/buttonIncreasered"
+            style="@style/button"
+            android:text="+"/>
+
+        <Button
+            android:id="@+id/buttonDecreasered"
+            style="@style/button"
+            android:text="-"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/wrapperblue"
+        android:background="@drawable/wrapperblue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textViewblue"
+            style="@style/textlbl"
+            android:text="Blue - 0%" />
+
+        <Button
+            android:id="@+id/buttonIncreaseblue"
+            style="@style/button"
+            android:text="+"/>
+
+        <Button
+            android:id="@+id/buttonDecreaseblue"
+            style="@style/button"
+            android:text="-"/>
+    </LinearLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/wrapperyellow"
+        android:background="@drawable/wrapperyellow"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textViewyellow"
+            style="@style/textlbl"
+            android:text="Yellow - 0%"/>
+
+        <Button
+            android:id="@+id/buttonIncreaseyellow"
+            style="@style/button"
+            android:text="+"/>
+
+        <Button
+            android:id="@+id/buttonDecreaseyellow"
+            style="@style/button"
+            android:text="-"/>
+    </LinearLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/wrapperygreen"
+        android:background="@drawable/wrappergreen"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textViewgreen"
+            style="@style/textlbl"
+            android:text="Green - 0%"/>
+
+        <Button
+            android:id="@+id/buttonIncreasegreen"
+            style="@style/button"
+            android:text="+"/>
+
+        <Button
+            android:id="@+id/buttonDecreasegreen"
+            style="@style/button"
+            android:text="-"/>
+    </LinearLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/wrapperypurple"
+        android:background="@drawable/wrapperpurple"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textViewpurple"
+            style="@style/textlbl"
+            android:text="Purple - 0%"/>
+
+        <Button
+            android:id="@+id/buttonIncreasepurple"
+            style="@style/button"
+            android:text="+"/>
+
+        <Button
+            android:id="@+id/buttonDecreasepurple"
+            style="@style/button"
+            android:text="-"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/colorPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Color Mixer" />
 </LinearLayout>

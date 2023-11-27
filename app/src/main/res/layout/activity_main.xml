@@ -32,7 +32,7 @@
         style="@style/MySeekBarStyle"
         android:id="@+id/greenSeekBar"
         android:colorControlActivated="@android:color/holo_green_light"
-        android:colorControlHighlight="@android:color/holo_green_light"
+        android:colorControlHighlight="#99CC00"
         android:colorControlNormal="@android:color/holo_green_dark"
         android:progressBackgroundTint="@android:color/holo_green_dark"
         android:progressTint="@android:color/holo_green_light"

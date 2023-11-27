@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var colorSquare: View
     private lateinit var roundedDrawable: GradientDrawable
-    private var RGB: String = ""
     private var red = 0
     private var green = 0
     private var blue = 0
